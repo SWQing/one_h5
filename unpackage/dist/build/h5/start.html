@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oneone</title>
+</head>
+<body>
+    <input type="hidden" name="id" value="167/355/9430" >
+    <input type="hidden" name="openId" value="o10ngjicQmggE8e2HY3UGydKOy8o" >
+</body>
+<script>
+    window.onload = function() {
+        var openId = document.querySelector('input[name=openId]').value
+        var id = document.querySelector('input[name=id]').value
+        window.localStorage.setItem('openId', openId);
+        window.location.href = './index.html?id=' + id
+    }
+</script>
+</html>
